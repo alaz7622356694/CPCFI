@@ -1,0 +1,30 @@
+.header-container {
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    @include flex(column);
+
+
+
+}
+
+.main-content {
+    margin-top: 115px;
+    @include flex(row);
+
+}
+
+.footer {
+
+    height: 10vh;
+    @include flex(column);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: $color-green;
+    color: white;
+
+
+
+}
