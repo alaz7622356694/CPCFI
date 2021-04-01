@@ -358,7 +358,7 @@
         @include for-size(phone-only) {
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 2fr);
+            grid-template-rows: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 2fr);
             font-size: 10px;
 
         }
@@ -366,7 +366,7 @@
         @include for-size(tablet-portrait-up) {
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: minmax(min-content, 2fr) minmax(min-content, 2fr) minmax(min-content, 2fr) minmax(min-content, 2fr);
+            grid-template-rows: minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 2fr);
             font-size: 16px;
 
         }
@@ -412,14 +412,11 @@
 
 
             @include for-size(phone-only) {
-                grid-column: 1 / 2;
-                grid-row: 3 / 4;
-
+                display: none;
             }
 
             @include for-size(tablet-portrait-up) {
-                grid-column: 1 / 2;
-                grid-row: 3 / 4;
+                display: none;
             }
 
         }
@@ -431,15 +428,13 @@
             grid-row: 2 / 4;
 
             @include for-size(phone-only) {
-                grid-column: 2 / 3;
-                grid-row: 3 / 4;
+                display: none;
 
 
             }
 
             @include for-size(tablet-portrait-up) {
-                grid-column: 2 / 3;
-                grid-row: 3 / 4;
+                display: none;
 
 
             }
@@ -468,12 +463,12 @@
 
             @include for-size(phone-only) {
                 grid-column: 1/ 3;
-                grid-row: 4/ 6;
+                grid-row: 3/ 5;
             }
 
             @include for-size(tablet-portrait-up) {
                 grid-column: 1/ 3;
-                grid-row: 4/ 6;
+                grid-row: 3/ 5;
             }
 
         }
