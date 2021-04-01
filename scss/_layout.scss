@@ -1,10 +1,11 @@
 .header-container {
-
+    width: 100vw;
+    height: 20vh;
     position: fixed;
     top: 0;
     z-index: 100;
     @include flex(column);
-    flex-wrap: wrap;
+
 
 }
 
