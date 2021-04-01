@@ -9,14 +9,10 @@
     }
 
     .logo {
-        width: 8vw;
+        width: 100px;
         opacity: 0.8;
         background: $color-white;
 
-        @include for-size(phone-only) {
-            width: 30vw;
-
-        }
 
     }
 
@@ -42,7 +38,7 @@
     .menu,
     .submenu {
         list-style-type: none;
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
         text-transform: uppercase;
 
@@ -82,6 +78,8 @@
     .menu {
         display: flex;
         flex-wrap: wrap;
+        width: 100vw;
+
     }
 
 
@@ -101,8 +99,8 @@
 
     .toggle {
         order: 1;
-        font-size: 28px;
-        margin-right: 10px;
+        font-size: 26px;
+
     }
 
     .item.button {
@@ -188,7 +186,7 @@
 
         .toggle {
             order: 1;
-            font-size: 28px;
+            font-size: 26px;
             margin-right: 10px;
         }
 
