@@ -4,18 +4,22 @@
     background: linear-gradient(to right, white, white, skyblue, rgb(1, 1, 156));
 
     .img-header {
-        max-width: 100%;
         margin-left: auto;
         opacity: 0.2;
     }
 
     .logo {
-        width: 100px;
+        width: 8vw;
         opacity: 0.8;
         background: $color-white;
 
+        @include for-size(phone-only) {
+            width: 30vw;
+        }
 
     }
+
+
 
 
 }
