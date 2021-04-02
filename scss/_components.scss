@@ -336,7 +336,7 @@
 
         @include for-size(phone-only) {
             grid-template-columns: 50% 50%;
-            grid-template-rows: minmax(min-content, 15%) repeat(4, minmax(min-content, 24%));
+            grid-template-rows: 12% repeat(4, minmax(min-content, 22%));
             grid-auto-flow: dense;
             font-size: 10px;
 
@@ -464,9 +464,13 @@
             background: linear-gradient(rgb(0, 0, 75), rgb(26, 0, 139), rgb(4, 0, 252));
 
             span {
-                padding: 10px 10px;
+                padding: 20px 10px;
                 color: $color-white;
-                line-height: 25px;
+                line-height: 30px;
+                text-align: justify;
+                font-size: 18px;
+
+
             }
 
             #bg2 {
@@ -484,9 +488,10 @@
 
 
                 span {
-                    padding: 10px 30px;
-                    text-align: center;
+                    padding: 5px;
+                    text-align: justify;
                     line-height: 12px;
+                    font-size: 10px;
                 }
 
                 #bg2 {
@@ -509,7 +514,7 @@
                 span {
                     padding: 10px;
                     text-align: justify;
-                    line-height: 16px;
+                    line-height: 26px;
                 }
 
                 #bg2 {
