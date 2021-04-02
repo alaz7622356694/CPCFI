@@ -433,12 +433,17 @@
             grid-row: 2 / 4;
             background-color: darkgreen;
             color: white;
+
             vertical-align: center;
             text-align: center;
 
             .text {
-                padding: 15px;
+                padding: 25px;
+                vertical-align: center;
+                text-align: center;
             }
+
+
 
             @include for-size(phone-only) {
                 grid-column: 2 / 3;
@@ -466,9 +471,13 @@
             span {
                 padding: 20px 10px;
                 color: $color-white;
-                line-height: 30px;
+                line-height: 28px;
                 text-align: justify;
                 font-size: 18px;
+
+                h4 {
+                    color: rgb(238, 12, 12);
+                }
 
 
             }
@@ -488,7 +497,7 @@
 
 
                 span {
-                    padding: 5px;
+                    padding: 10px;
                     text-align: justify;
                     line-height: 12px;
                     font-size: 10px;
@@ -514,7 +523,8 @@
                 span {
                     padding: 10px;
                     text-align: justify;
-                    line-height: 26px;
+                    line-height: 20px;
+
                 }
 
                 #bg2 {
