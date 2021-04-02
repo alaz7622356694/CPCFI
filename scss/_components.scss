@@ -338,7 +338,7 @@
             grid-template-columns: 50% 50%;
             grid-template-rows: 12% repeat(4, minmax(min-content, 22%));
             grid-auto-flow: dense;
-            font-size: 10px;
+            font-size: 12px;
 
         }
 
@@ -407,8 +407,10 @@
             vertical-align: center;
             text-align: center;
 
-            .text {
-                padding: 15px;
+            div {
+                padding: 30px 30px;
+                text-align: justify;
+
             }
 
             @include for-size(phone-only) {
@@ -434,13 +436,10 @@
             background-color: darkgreen;
             color: white;
 
-            vertical-align: center;
-            text-align: center;
+            div {
+                padding: 30px 30px;
+                text-align: justify;
 
-            .text {
-                padding: 25px;
-                vertical-align: center;
-                text-align: center;
             }
 
 
