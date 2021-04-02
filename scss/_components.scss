@@ -344,7 +344,8 @@
 
         @include for-size(tablet-portrait-up) {
             grid-template-columns: 50% 50%;
-            grid-template-rows: 20% minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 2fr);
+            grid-template-rows: 18% repeat(4, minmax(min-content, 22%));
+            grid-auto-flow: dense;
             font-size: 14px;
 
         }
@@ -514,7 +515,7 @@
                 }
 
                 #bg2 {
-                    width: 25%;
+                    width: 20%;
                     height: auto;
 
                 }
