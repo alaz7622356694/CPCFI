@@ -338,7 +338,7 @@
             grid-template-columns: 50% 50%;
             grid-template-rows: 12% repeat(4, minmax(min-content, 22%));
             grid-auto-flow: dense;
-            font-size: 12px;
+            font-size: 11px;
 
         }
 
@@ -417,6 +417,13 @@
                 grid-column: 1 / 2;
                 grid-row: 2 / 3;
 
+                div {
+                    padding: 5px 5px;
+                    text-align: justify;
+
+                }
+
+
 
             }
 
@@ -448,6 +455,12 @@
                 grid-column: 2 / 3;
                 grid-row: 2 / 3;
 
+                div {
+                    padding: 5px 5px;
+                    text-align: justify;
+
+                }
+
 
             }
 
@@ -476,6 +489,8 @@
 
                 h4 {
                     color: rgb(238, 12, 12);
+                    letter-spacing: 1px;
+
                 }
 
 
