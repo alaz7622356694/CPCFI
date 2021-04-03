@@ -1,11 +1,8 @@
 header {
-    width: 100vw;
-    height: 100vh;
+
     position: fixed;
     top: 0;
     z-index: 100;
-
-
 
 }
 
@@ -23,132 +20,5 @@ footer {
     color: #bbb;
     line-height: 1.5;
 
-    ul {
-        list-style: none;
-        padding-left: 0;
-    }
-
-    a {
-        text-decoration: none;
-        color: skyblue;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-
-
-    .ft-title {
-        color: #fff;
-        font-weight: bold;
-        font-size: 1.4em;
-        padding-bottom: 0.625rem;
-
-        @include for-size(phone-only) {
-            padding: 0;
-            font-size: 1.2em;
-        }
-    }
-
-    .ft-main {
-        padding: 1.25rem 1.875rem;
-        @include flex(row);
-        justify-content: center;
-
-        @include for-size(phone-only) {
-            padding: 0;
-            @include flex(column);
-            font-size: 10px;
-        }
-
-
-    }
-
-    .ft-main-item {
-        padding: 1.25rem;
-        min-width: 12.5rem
-            /*200px*/
-        ;
-
-        @include for-size(phone-only) {
-            padding: 8px;
-
-
-        }
-    }
-
-
-    .ft-social {
-        padding: 0 1.875rem 1.25rem;
-    }
-
-    .ft-social-list {
-        display: flex;
-        justify-content: center;
-        border-top: 1px #777 solid;
-        padding-top: 1.25rem;
-    }
-
-    .ft-social-list li {
-        margin: 0.5rem;
-        font-size: 1.25rem;
-    }
-
-    .ft-legal {
-        padding: 0.9375rem 1.875rem;
-        background-color: rgb(1, 36, 1);
-    }
-
-    .ft-legal-list {
-
-        @include flex(row);
-
-
-        @include for-size(phone-only) {
-            @include flex(column);
-            justify-content: center;
-            align-items: center;
-            font-size: 10px;
-        }
-
-        @include for-size(tablet-portrait-up) {
-            @include flex(column);
-            justify-content: center;
-            align-items: center;
-            font-size: 10px;
-        }
-    }
-
-    .ft-legal-list {
-        li {
-            margin-right: 10px;
-        }
-
-        .copy {
-            margin-left: auto;
-        }
-
-        @include for-size(phone-only) {
-            li {
-                margin-right: 0;
-            }
-
-            .copy {
-                margin-left: 0;
-            }
-        }
-
-        @include for-size(tablet-portrait-up) {
-            li {
-                margin-right: 0;
-            }
-
-            .copy {
-                margin-left: 0;
-            }
-        }
-
-    }
 
 }
