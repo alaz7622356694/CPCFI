@@ -5,6 +5,7 @@
 
         //mobile-menu
         .mobile-container {
+
             background-color: $color-green;
             color: white;
             border-radius: 10px;
@@ -12,12 +13,18 @@
             .topnav {
                 overflow: hidden;
                 background-color: $color-green;
-                position: relative;
             }
 
             .topnav #myLinks {
-                display: none;
+                position: relative;
                 background-color: $color-blue;
+                overflow-y: auto;
+                height: 100vh;
+
+                a {
+                    font-size: 14px;
+                }
+
             }
 
             .topnav a {
@@ -49,7 +56,7 @@
                 background-color: $color-blue;
                 border: none;
                 color: white;
-                font-size: 16px;
+                font-size: 14px;
                 padding: 10px 15px;
 
                 i {
@@ -81,9 +88,15 @@
             }
 
             .dropdown-content {
+
+                overflow-y: scroll;
+
                 .submenu {
                     display: none;
                     background-color: cornflowerblue;
+                    overflow-y: scroll;
+
+
 
                     a {
                         margin-left: 15px;
@@ -95,6 +108,8 @@
 
                 .submenu2 {
                     display: none;
+                    overflow-y: scroll;
+
 
                     a {
                         color: $color-green;
@@ -108,6 +123,8 @@
             .lang {
                 display: flex;
                 justify-content: center;
+                overflow-y: scroll;
+                height: inherit;
             }
         }
 
@@ -119,16 +136,20 @@
             background-color: $color-green;
             color: white;
             border-radius: 10px;
+            overflow-y: scroll;
 
             .topnav {
                 overflow: hidden;
                 background-color: $color-green;
                 position: relative;
+                overflow-y: scroll;
             }
 
             .topnav #myLinks {
                 display: none;
                 background-color: $color-blue;
+                overflow-y: scroll;
+                height: 100vh;
             }
 
             .topnav a {
@@ -504,7 +525,7 @@
     }
 }
 
-//Desktop-menu
+
 
 .content {
 
@@ -700,7 +721,7 @@
                     font-size: 10px;
 
                     h4 {
-                        font-size: 14px;
+                        display: none;
                     }
                 }
 
@@ -722,6 +743,8 @@
 
 
                 span {
+
+
                     padding: 10px;
                     text-align: justify;
                     line-height: 20px;
