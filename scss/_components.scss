@@ -1,326 +1,510 @@
 .menu-bar {
 
 
-    nav {
-        height: 50px;
-        background: $color-green;
-    }
+    @include for-size(phone-only) {
 
-    a {
-        color: white;
-        text-decoration: none;
+        //mobile-menu
+        .mobile-container {
+            background-color: $color-green;
+            color: white;
+            border-radius: 10px;
 
-    }
+            .topnav {
+                overflow: hidden;
+                background-color: $color-green;
+                position: relative;
+            }
 
-    .menu,
-    .submenu {
-        list-style-type: none;
-        font-size: 1rem;
+            .topnav #myLinks {
+                display: none;
+                background-color: $color-blue;
+            }
 
-        @include for-size(phone-only) {
-            font-size: 0.8rem;
+            .topnav a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
+
+            .topnav a.icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav a:hover {
+                color: rgb(255, 255, 255);
+            }
+
+            .active {
+                color: white;
+            }
+
+            .dropbtn {
+                display: flex;
+                width: 100%;
+                background-color: $color-blue;
+                border: none;
+                color: white;
+                font-size: 16px;
+                padding: 10px 15px;
+
+                i {
+                    margin-left: auto;
+                }
+            }
+
+            .drop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    margin-left: auto;
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+            }
+
+            .dropbtn2 {
+
+                background-color: cornflowerblue;
+                border: none;
+                color: white;
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+
+            .dropdown-content {
+                .submenu {
+                    display: none;
+                    background-color: cornflowerblue;
+
+                    a {
+                        margin-left: 15px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+
+                }
+
+                .submenu2 {
+                    display: none;
+
+                    a {
+                        color: $color-green;
+                        font-size: 12px;
+                        margin-left: 30px;
+
+                    }
+                }
+            }
+
+            .lang {
+                display: flex;
+                justify-content: center;
+            }
         }
 
-        width: 100%;
-        text-transform: uppercase;
-
 
     }
-
-    .item {
-        padding: 5px;
-    }
-
-    .item.button {
-        padding: 9px 5px;
-    }
-
-    .item:not(.button) a:hover,
-    .item a:hover::after {
-        color: #ccc;
-    }
-
-    .lang {
-        @include flex(row);
-        justify-content: center;
-        align-items: center;
-        margin-top: -5px;
-
-
-        img {
-            width: 32px;
-            height: 30px;
-        }
-
-
-
-    }
-
-    /* Mobile menu */
-    .menu {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-
-
-
-    }
-
-    .menu li a {
-        display: block;
-        padding: 10px;
-
-    }
-
-
-
-    .menu li.subitem a {
-        padding: 10px;
-
-    }
-
-    .menu li.subitem2 a {
-        padding: 10px;
-    }
-
-    .toggle {
-        order: 1;
-        font-size: 26px;
-
-    }
-
-    .item.button {
-        order: 2;
-    }
-
-    .item {
-        order: 3;
-        width: 100%;
-        text-align: center;
-        display: none;
-
-
-
-    }
-
-
-
-    .active .item {
-        display: block;
-        background-color: $color-blue;
-        padding: 0;
-
-
-    }
-
-
-
-    .submenu {
-        display: none;
-
-    }
-
-    .submenu-active .submenu {
-        display: block;
-        background-color: $color-green;
-
-    }
-
-    .has-submenu i {
-        font-size: 12px;
-    }
-
-    .has-submenu>a::after {
-        font-family: "Font Awesome 5 Free";
-        font-size: 12px;
-        line-height: 16px;
-        font-weight: 900;
-        content: "\f078";
-        color: white;
-        padding-left: 5px;
-
-    }
-
-    .subitem a {
-
-        padding: 10px 15px;
-
-    }
-
-    .subitem2 a {
-        padding: 10px 15px;
-        background-color: steelblue;
-        font-size: 12px;
-
-    }
-
-    .submenu-active {
-        background-color: #111;
-        border-radius: 3px;
-    }
-
 
     @include for-size(tablet-portrait-up) {
-        .menu {
-            justify-content: center;
+        .mobile-container {
+            background-color: $color-green;
+            color: white;
+            border-radius: 10px;
 
-        }
+            .topnav {
+                overflow: hidden;
+                background-color: $color-green;
+                position: relative;
+            }
 
+            .topnav #myLinks {
+                display: none;
+                background-color: $color-blue;
+            }
 
+            .topnav a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
 
-        .item.button {
-            width: auto;
-            order: 1;
-            display: block;
-        }
+            .topnav a.icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
 
-        .toggle {
-            order: 1;
-            font-size: 26px;
-            margin-right: 10px;
-        }
+            .topnav a:hover {
+                color: rgb(255, 255, 255);
+            }
 
-        /* Button up from tablet screen */
-        .menu li.button a {
-            padding: 10px 15px;
-            margin: 5px 0;
-        }
+            .active {
+                color: white;
+            }
 
-        .button a {
-            background: #0080ff;
-            border: 1px royalblue solid;
-        }
+            .dropbtn {
+                display: flex;
+                width: 100%;
+                background-color: $color-blue;
+                border: none;
+                color: white;
+                font-size: 16px;
+                padding: 10px 15px;
 
-        .button.secondary {
-            border: 0;
-        }
+                i {
+                    margin-left: auto;
+                }
+            }
 
-        .button.secondary a {
-            background: transparent;
-            border: 1px #0080ff solid;
-        }
+            .drop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-        .button a:hover {
-            text-decoration: none;
-        }
+                i {
+                    margin-left: auto;
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+            }
 
-        .button:not(.secondary) a:hover {
-            background: royalblue;
-            border-color: darkblue;
+            .dropbtn2 {
+
+                background-color: cornflowerblue;
+                border: none;
+                color: white;
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+
+            .dropdown-content {
+                .submenu {
+                    display: none;
+                    background-color: cornflowerblue;
+
+                    a {
+                        margin-left: 15px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+
+                }
+
+                .submenu2 {
+                    display: none;
+
+                    a {
+                        color: $color-green;
+                        font-size: 12px;
+                        margin-left: 30px;
+
+                    }
+                }
+            }
+
+            .lang {
+                display: flex;
+                justify-content: center;
+            }
         }
     }
 
     @include for-size(tablet-landscape-up) {
-        .menu {
-            align-items: flex-start;
-            flex-wrap: nowrap;
-            background: none;
+        .mobile-container {
+            background-color: $color-green;
+            color: white;
+            border-radius: 10px;
 
-        }
 
-        .item {
-            order: 1;
-            position: relative;
-            display: block;
-            width: auto;
-        }
+            .topnav {
+                overflow: hidden;
+                background-color: $color-green;
+                position: relative;
 
-        .language {
-            order: 2;
-            margin-left: auto;
-        }
+            }
 
-        .submenu-active .submenu {
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 50px;
-            background: $color-blue;
-        }
+            .topnav #myLinks {
+                display: flex;
+                background-color: $color-green;
 
-        .toggle {
-            display: none;
-        }
 
-        .submenu-active {
-            border-radius: 0;
+
+
+            }
+
+            .topnav a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
+
+            .topnav a.icon {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav a:hover {
+                color: rgb(255, 255, 255);
+
+            }
+
+            .topnav .active {
+                display: none;
+            }
+
+            .dropbtn {
+                display: flex;
+                width: 100%;
+                background-color: $color-blue;
+                border: none;
+                color: white;
+                font-size: 16px;
+                padding: 10px 15px;
+
+                i {
+                    margin-left: auto;
+                }
+            }
+
+            .drop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    margin-left: auto;
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+            }
+
+            .dropbtn2 {
+
+
+                color: white;
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+
+            .dropdown-content {
+
+
+                .submenu {
+
+                    display: none;
+
+
+
+                    a {
+                        margin-left: 15px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+
+                    }
+
+                }
+
+                .submenu2 {
+
+                    display: none;
+
+
+                    a {
+
+                        color: skyblue;
+                        font-size: 12px;
+                        margin-left: 40px;
+
+
+                    }
+                }
+            }
+
+            .dropdown:hover .submenu {
+                display: block;
+
+            }
+
+            .submenu:hover .submenu2 {
+                display: block;
+            }
+
+
+
+            .lang {
+                display: flex;
+                margin-left: auto;
+                margin-right: 20px;
+
+                a {
+                    padding: 5px 5px;
+                }
+            }
         }
     }
 
     @include for-size(desktop-up) {
-        .menu {
-            align-items: flex-start;
-            flex-wrap: nowrap;
-            background: none;
-            margin-right: 600px;
-        }
-
-        .language {
-            order: 2;
-            margin-left: auto;
-        }
-
-        .item {
-            order: 1;
-            position: relative;
-            display: block;
-            width: auto;
-        }
+        .mobile-container {
+            background-color: $color-green;
+            color: white;
+            border-radius: 10px;
 
 
-        .submenu-active .submenu {
-            display: block;
-            position: absolute;
-            background: $color-blue;
-        }
+            .topnav {
+                overflow: hidden;
+                background-color: $color-green;
+                position: relative;
 
-        .toggle {
-            display: none;
+            }
 
-        }
-
-        .submenu-active {
-            border-radius: 0;
-        }
-    }
-
-    @include for-size(big-desktop-up) {
-        .menu {
-            align-items: flex-start;
-            flex-wrap: nowrap;
-            background: none;
-            margin-right: 600px;
-        }
+            .topnav #myLinks {
+                display: flex;
+                background-color: $color-green;
 
 
 
-        .item {
-            order: 1;
-            position: relative;
-            display: block;
-            width: auto;
-        }
 
-        .language {
-            order: 2;
-            margin-left: auto;
-        }
+            }
 
-        .submenu-active .submenu {
-            display: block;
-            position: absolute;
-            background: $color-blue;
-        }
+            .topnav a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
 
-        .toggle {
-            display: none;
-        }
+            .topnav a.icon {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
 
-        .submenu-active {
-            border-radius: 0;
+            .topnav a:hover {
+                color: rgb(255, 255, 255);
+
+            }
+
+            .topnav .active {
+                display: none;
+            }
+
+            .dropbtn {
+                display: flex;
+                width: 100%;
+                background-color: $color-blue;
+                border: none;
+                color: white;
+                font-size: 16px;
+                padding: 10px 15px;
+
+                i {
+                    margin-left: auto;
+                }
+            }
+
+            .drop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    margin-left: auto;
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+            }
+
+            .dropbtn2 {
+
+
+                color: white;
+                font-size: 14px;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+            }
+
+            .dropdown-content {
+
+
+                .submenu {
+
+                    display: none;
+
+
+
+                    a {
+                        margin-left: 15px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+
+                    }
+
+                }
+
+                .submenu2 {
+
+                    display: none;
+
+
+                    a {
+
+                        color: skyblue;
+                        font-size: 12px;
+                        margin-left: 40px;
+
+
+                    }
+                }
+            }
+
+            .dropdown:hover .submenu {
+                display: block;
+
+            }
+
+            .submenu:hover .submenu2 {
+                display: block;
+            }
+
+
+
+            .lang {
+                display: flex;
+                margin-left: auto;
+                margin-right: 20px;
+
+                a {
+                    padding: 5px 5px;
+                }
+            }
         }
     }
 }
+
+//Desktop-menu
 
 .content {
 
@@ -486,6 +670,7 @@
                 font-size: 18px;
 
                 h4 {
+                    font-size: 26px;
                     color: rgb(238, 12, 12);
                     letter-spacing: 1px;
 
@@ -513,6 +698,10 @@
                     text-align: justify;
                     line-height: 12px;
                     font-size: 10px;
+
+                    h4 {
+                        font-size: 14px;
+                    }
                 }
 
                 #bg2 {

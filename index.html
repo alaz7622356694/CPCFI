@@ -12,63 +12,80 @@
 
 </head>
 
-
-<body>
-
-</body>
-
-</html>
-
 <body>
 
     <header>
 
         <div class="menu-bar">
-            <nav>
-                <ul class="menu">
-                    <li class="item"><a href="index.html">Accueil</a></li>
+            <!--Mobile-menu-->
+            <div class="mobile-container">
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="#" class="active">CPCFI</a>
+                    <div id="myLinks">
+                        <a href="#">Accueil</a>
+                        <a href="#">Actualités</a>
 
-                    <li class="item has-submenu">
-                        <a tabindex="0">Dossiers</a>
-                        <ul class="submenu">
-                            <li class="subitem has-submenu"><a href="#">IRAN</a>
-                            <li class="subitem2"><a href="EtudesRapports.html">Etudes & Rapports</a></li>
-                            <li class="subitem2"> <a href=" #">Secteurs d’activité</a></li>
-                            <li class="subitem2"><a href=" #">Export</a></li>
-                            <li class="subitem2"><a href=" #">Réglementations</a></li>
-                            <li class="subitem2"><a href=" #">Investisement et implantation</a></li>
-                    </li>
+                        <div class="dropdown">
+                            <div class="drop">
+                                <a href="">Dossiers </a><i href="javascript:void(0);" onclick="clickfunc()"
+                                    class="fa fa-caret-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="submenu" id='sub'>
+                                    <div class="dropdown">
+                                        <div class="drop">
+                                            <a href="">iran </a><i href="javascript:void(0);" onclick="clickfunc2()"
+                                                class="fa fa-caret-down"></i>
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <div class="submenu2" id='sub2'>
+                                                <a href="#">Etudes & Rapports</a>
+                                                <a href="#">Secteurs d’activité</a>
+                                                <a href="#">Export</a>
+                                                <a href="#">Réglementations</a>
+                                                <a href="#">Investisement et implantation</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="">Evènements</a>
+                        <div class="dropdown">
+                            <div class="drop">
+                                <a href="">Qui Sommes-Nous </a><i href="javascript:void(0);" onclick="clickfunc3()"
+                                    class="fa fa-caret-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="submenu" id='sub3'>
+                                    <a href="#">Members</a>
 
-                    <li class="subitem has-submenu"><a href="#">FRANCE</a></li>
-                </ul>
-                </li>
+                                </div>
+                            </div>
+                        </div>
 
+                        <a href="#">Contact</a>
 
-
-                <li class="item has-submenu">
-                    <a tabindex="0">Actualités</a>
-                    <ul class="submenu">
-                        <li class="subitem"><a href="#">members</a></li>
-
-                    </ul>
-                </li>
-                <li class="item"><a href="#">évènement</a></li>
-                <li class="item"><a href="#">à propos de nous</a></li>
-                <li class="item"><a href="#">Contact</a></li>
-                </li>
-                <li class="item">
-                    <div class="lang">
-                        <a href=""> <img src="images/icons/France-32.png" alt=""></a>
-                        <a href=""> <img src="images/icons/english.png" alt=""></a>
-                        <a href=""> <img src="images/icons/Iran-32.png" alt=""></a>
+                        <div class="lang">
+                            <a href=""> <img src="images/icons/France-32.png" alt=""></a>
+                            <a href=""> <img src="images/icons/english.png" alt=""></a>
+                            <a href=""> <img src="images/icons/Iran-32.png" alt=""></a>
+                        </div>
                     </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
 
-                </li>
-                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-                </ul>
-                </ul>
-            </nav>
+            </div>
+
+
+
+
         </div>
+
+
 
 
     </header>
@@ -202,8 +219,46 @@
         <!-- Footer main -->
 
     </footer>
+    <script>
+        function myFunction() {
+            const x = document.getElementById("myLinks");
 
-    <script src="script.js"></script>
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+
+        function clickfunc() {
+            const sub = document.getElementById("sub");
+
+            if (sub.style.display === "block") {
+                sub.style.display = "none";
+            } else {
+                sub.style.display = "block";
+            }
+        }
+
+        function clickfunc2() {
+            const sub = document.getElementById("sub2");
+            if (sub.style.display === "block") {
+                sub.style.display = "none";
+            } else {
+                sub.style.display = "block";
+            }
+        }
+
+        function clickfunc3() {
+            const sub = document.getElementById("sub3");
+            if (sub.style.display === "block") {
+                sub.style.display = "none";
+            } else {
+                sub.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 

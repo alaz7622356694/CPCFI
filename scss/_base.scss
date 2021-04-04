@@ -25,6 +25,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -43,7 +44,7 @@ body {
     }
 
     @else if $range==tablet-portrait-up {
-        @media (min-width:568px) and (max-width:$tablet-portrait-upper-boundary) {
+        @media (min-width: 568px)and(max-width:$tablet-portrait-upper-boundary) {
             @content;
         }
 
