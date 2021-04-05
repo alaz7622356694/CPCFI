@@ -903,10 +903,10 @@
 
 .ac-content {
     color: white;
-    padding: 60px 20px;
+    padding: 10px 20px;
     line-height: 60px;
     text-align: justify;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(6, 6, 173, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(6, 6, 173, 1) 47%, rgb(14, 33, 202) 100%);
 
     h1 {
         text-shadow: 0 0 10px #ffffff;
@@ -965,11 +965,41 @@
             overflow-y: scroll;
         }
     }
+
+    .ac-flex2 {
+        @include flex(row);
+
+
+        img {
+            width: 100%;
+
+            margin-bottom: 10px;
+
+        }
+
+        div {
+            padding: 0 10px;
+        }
+
+
+        @include for-size(phone-only) {
+            @include flex(column);
+        }
+
+        @include for-size(tablet-portrait-up) {
+            @include flex(column);
+            overflow-y: scroll;
+        }
+    }
+
+
+
 }
 
 .slider {
     position: fixed;
     margin-left: 800px;
+
 
     @include for-size(phone-only) {
         position: relative;
