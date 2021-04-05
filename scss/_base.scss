@@ -9,31 +9,6 @@ $color-white:white;
     flex-direction: $dir;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
-html {
-
-
-    font-family: 'Muli', sans-serif;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-
-}
-
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-}
-
-
-
 //Responsive
 @mixin for-size($range) {
     $phone-upper-boundary: 600px;
@@ -72,4 +47,28 @@ body {
             @content;
         }
     }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+html {
+    font-family: 'Muli', sans-serif;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
