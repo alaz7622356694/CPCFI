@@ -916,6 +916,14 @@
         color: rgb(211, 208, 208);
     }
 
+    ul {
+        margin-left: 50px;
+        color: rgb(6, 202,
+                137);
+        font-size: 16px;
+        line-height: 30px;
+    }
+
     @include for-size(phone-only) {
         padding: 10px 20px;
 
@@ -930,6 +938,11 @@
         }
 
         line-height: 28px;
+
+        ul {
+            font-size: 12px;
+            margin-left: 20px;
+        }
 
     }
 
@@ -956,12 +969,32 @@
     .ac-flex {
         display: flex;
 
+        img {
+            margin-top: 100px;
+            margin-left: 50px;
+            width: 40%;
+            height: 50%;
+        }
+
         @include for-size(phone-only) {
             @include flex(column);
+
+            img {
+                margin: 0;
+                width: 100%;
+                height: auto;
+            }
         }
 
         @include for-size(tablet-portrait-up) {
             @include flex(column);
+
+            img {
+                margin: 0;
+                width: 100%;
+                height: auto;
+            }
+
             overflow-y: scroll;
         }
     }
@@ -980,6 +1013,7 @@
         div {
             padding: 0 10px;
         }
+
 
 
         @include for-size(phone-only) {
