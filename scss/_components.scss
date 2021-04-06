@@ -1032,8 +1032,84 @@
         }
     }
 
+    .image-box {
+        @include flex(column);
+        flex-wrap: wrap;
 
 
+        img {
+            width: 100px;
+            height: 50px;
+
+            @include for-size(phone-only) {
+                width: 30%;
+                height: 30%;
+            }
+
+        }
+
+        .img1 {
+            @include flex(row);
+
+            @include for-size(phone-only) {
+                margin-bottom: 10px;
+            }
+
+            span {
+                margin-left: 10px;
+                margin-top: -15px;
+
+
+
+
+            }
+
+        }
+
+
+
+
+
+    }
+
+    .members {
+        @include flex(row);
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            text-align: center;
+            vertical-align: center;
+            margin-bottom: 10px;
+
+            @include for-size(phone-only) {
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+        }
+    }
+
+    .partners {
+        display: flex;
+        justify-content: space-evenly;
+
+        @include for-size(phone-only) {
+
+
+            img {
+                width: 50%;
+            }
+        }
+
+    }
 }
 
 .slider {
@@ -1064,6 +1140,100 @@
 
 }
 
+.about-us {
+    display: flex;
+
+    @include for-size(phone-only) {
+        @include flex(column);
+    }
+}
+
+.about1 {
+    width: 30%;
+    height: 400px;
+    background-image: url("../images/header.JPG");
+    background-repeat: no-repeat;
+
+
+    h1 {
+        margin-top: 150px;
+        padding: 0 5px;
+        font-size: 3em;
+    }
+
+    @include for-size(phone-only) {
+        width: 100%;
+
+        h1 {
+            margin-top: 180px;
+            padding: 0 30px;
+            font-size: 2.3em;
+        }
+
+    }
+}
+
+.about2 {
+    width: 70%;
+    height: 400px;
+    background: linear-gradient(to right, white, white, rgb(135, 223, 235), rgb(2, 82, 255));
+    overflow-y: scroll;
+    padding: 0 15px;
+    line-height: 35px;
+
+    img {
+        margin-top: 5px;
+    }
+
+    span {
+        color: black;
+        font-size: 16px;
+
+        h2 {
+            font-weight: 700;
+        }
+
+
+    }
+
+    @include for-size(phone-only) {
+        width: 100%;
+        line-height: 25px;
+
+        span {
+            color: black;
+            font-size: 12px;
+            text-align: justify;
+
+
+            h2 {
+                font-size: 18px;
+            }
+
+        }
+
+
+    }
+
+    @include for-size(tablet-portrait-up) {
+        width: 100%;
+        line-height: 25px;
+
+        span {
+            color: black;
+            font-size: 12px;
+            text-align: justify;
+
+
+            h2 {
+                font-size: 18px;
+            }
+
+        }
+
+
+    }
+}
 
 
 .footer-section {
