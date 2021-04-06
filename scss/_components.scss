@@ -924,6 +924,12 @@
         line-height: 30px;
     }
 
+    .img-imp {
+        width: 100%;
+
+
+    }
+
     @include for-size(phone-only) {
         padding: 10px 20px;
 
@@ -1046,15 +1052,18 @@
         overflow-y: scroll;
     }
 
-    .mySlides {
-        display: none;
 
-        @include for-size(tablet-portrait-up) {
-            overflow-y: scroll;
-        }
-
-    }
 }
+
+.mySlides {
+    display: none;
+
+    @include for-size(tablet-portrait-up) {
+        overflow-y: scroll;
+    }
+
+}
+
 
 
 .footer-section {

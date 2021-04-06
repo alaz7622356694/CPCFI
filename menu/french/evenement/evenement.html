@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPCFI</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.JPG" />
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="menu-bar">
+            <div class="mobile-container">
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="#" class="active">CPCFI</a>
+                    <div id="myLinks">
+                        <a href="../../../index.html">Accueil</a>
+                        <a href="../Actualités/Actualites.html">Actualités</a>
+
+                        <div class="dropdown">
+                            <div class="drop">
+                                <a href="../DOSSIERS/Dossiers.html">Dossiers </a><i href="javascript:void(0);"
+                                    onclick="clickfunc()" class="fa fa-caret-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="submenu" id='sub'>
+                                    <div class="dropdown">
+                                        <div class="drop">
+                                            <a href="../DOSSIERS/IRAN/IRAN.html">IRAN</a><i href="javascript:void(0);"
+                                                onclick="clickfunc2()" class="fa fa-caret-down"></i>
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <div class="submenu2" id='sub2'>
+                                                <a href="../DOSSIERS/IRAN/EtudesRapports.html">Etudes &
+                                                    Rapports</a>
+                                                <a href="../DOSSIERS/IRAN/secteurs.html">Secteurs
+                                                    d’activité</a>
+                                                <a href="../DOSSIERS/IRAN/export.html">Export</a>
+                                                <a href="../DOSSIERS/IRAN/Réglementations.html">Réglementations</a>
+                                                <a href="../DOSSIERS/IRAN/Investisement.html">Investisement et
+                                                    implantation</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../evenement/evenement.html">Evènements</a>
+                        <div class="dropdown">
+                            <div class="drop">
+                                <a href="../propos/propos.html">Qui Sommes-Nous </a><i href="javascript:void(0);"
+                                    onclick="clickfunc3()" class="fa fa-caret-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="submenu" id='sub3'>
+                                    <a href="../propos/members.html">Members</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="../contact/contact.html">Contact</a>
+
+                        <div class="lang">
+                            <a href=""> <img src="../../../images/icons/France-32.png" alt=""></a>
+                            <a href=""> <img src="../../../images/icons/english.png" alt=""></a>
+                            <a href=""> <img src="../../../images/icons/Iran-32.png" alt=""></a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </header>
+
+    <div class="main-content">
+        <div class="ac-content">
+            <div>
+                <h1>Nouveaux événements</h1>
+                <h4>no event</h4>
+            </div>
+            <hr>
+
+
+            <div class="w3-container">
+                <h1>Archive</h1>
+
+
+
+                <div class="w3-content w3-display-container">
+
+                    <div class="w3-display-container mySlides">
+                        <img src="../../../images/seminar/enviroment.jpg" style="width:100%">
+                        <div class="w3-display-bottomleft w3-large w3-container  w3-black">
+                            <h4>Séminaire Environnement - 2017</h4>
+
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                        <img src="../../../images/seminar/en2.jpg" style="width:100%">
+                        <div class="w3-display-bottomright w3-large w3-container  w3-black">
+                            <h4>Séminaire Environnement-2018
+                            </h4>
+
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                        <img src="../../../images/seminar/heritage.jpg" style="width:100%">
+                        <div class="w3-display-bottomleft w3-large w3-container  w3-black">
+                            <h4>Salon Héritage Persan - 2006</h4>
+
+                        </div>
+                    </div>
+                    <div> <button class=" w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class=" w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <section class="ft-main">
+                <div class="ft-main-item">
+                    <h2 class="ft-title">IRAN</h2>
+                    <ul>
+                        <li><a href="#">Etudes & Rapports</a></li>
+                        <li><a href="#">Secteurs d’activité</a></li>
+                        <li><a href="#">Export</a></li>
+                        <li><a href="#">Réglementations</a></li>
+                        <li><a href="#">Investisement et implantation</a></li>
+                    </ul>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title">FRANCE</h2>
+                </div>
+                <div class="ft-main-item">
+                    <h2 class="ft-title">Actualités</h2>
+                    <ul>
+                        <li><a href="#">Members</a></li>
+                    </ul>
+                </div>
+
+
+
+            </section>
+
+            <!-- Footer social -->
+            <section class="ft-social">
+                <ul class="ft-social-list">
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+
+
+                </ul>
+
+            </section>
+
+            <!-- Footer legal -->
+            <section class="ft-legal">
+                <ul class="ft-legal-list">
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <span class="copy">&copy; 2021 Copyright CPCFI | Desgined By Alireza Azari</span>
+                </ul>
+            </section>
+        </div>
+        <!-- Footer main -->
+
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <script>
+        function myFunction() {
+            const x = document.getElementById("myLinks");
+
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+
+        function clickfunc() {
+            const sub = document.getElementById("sub");
+
+            if (sub.style.display === "block") {
+                sub.style.display = "none";
+            } else {
+                sub.style.display = "block";
+            }
+        }
+
+        function clickfunc2() {
+            const sub = document.getElementById("sub2");
+            if (sub.style.display === "block") {
+                sub.style.display = "none";
+            } else {
+                sub.style.display = "block";
+            }
+        }
+
+        function clickfunc3() {
+            const sub = document.getElementById("sub3");
+            if (sub.style.display === "block") {
+                sub.style.display = "none";
+            } else {
+                sub.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+
+
+
+</html>
