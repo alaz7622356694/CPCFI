@@ -78,7 +78,8 @@
                         </div>
                     </div>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
+                        <i id='open' class="fa fa-bars"></i>
+                        <i id='close' class="fa fa-window-close" aria-hidden="true"></i>
                     </a>
                 </div>
 
@@ -247,17 +248,28 @@
     <script>
         function myFunction() {
             const x = document.getElementById("myLinks");
+            const open = document.getElementById("open");
+            const close = document.getElementById("close");
+
 
             if (x.style.display === "block") {
                 x.style.display = "none";
+                open.style.display = "block"
+                close.style.display = "none";
+
             } else {
                 x.style.display = "block";
+                open.style.display = "none"
+                close.style.display = "block";
 
             }
+
+
         }
 
         function clickfunc() {
             const sub = document.getElementById("sub");
+
 
             if (sub.style.display === "block") {
                 sub.style.display = "none";
