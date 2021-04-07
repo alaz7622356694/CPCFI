@@ -542,7 +542,7 @@
     .boxes {
 
         display: grid;
-        grid-template-columns: 50% 1fr 1fr;
+        grid-template-columns: 60% 1fr 1fr;
         grid-template-rows: 32% 1fr 1fr 1fr;
         column-gap: 3px;
         row-gap: 3px;
@@ -1470,6 +1470,7 @@
             @include flex(column);
             align-items: center;
             margin-right: 500px;
+            margin-bottom: 15px;
 
             i {
                 color: $color-white;
@@ -1489,6 +1490,15 @@
                 font-weight: 400;
             }
 
+            .cn {
+                display: flex;
+                align-items: center;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+
             @include for-size(phone-only) {
                 align-items: flex-start;
                 margin-right: 0;
@@ -1500,11 +1510,11 @@
 
                 h3 {
                     font-weight: 400;
-                    font-size: 18px;
+                    font-size: 14px;
                 }
 
                 h4 {
-                    font-size: 16px;
+                    font-size: 12px;
                     font-weight: 400;
                 }
 
@@ -1515,8 +1525,19 @@
                 align-items: flex-start;
                 margin-right: 0;
 
+                h1 {
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+
                 h3 {
-                    font-weight: 200;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                h4 {
+                    font-size: 12px;
+                    font-weight: 400;
                 }
 
             }
